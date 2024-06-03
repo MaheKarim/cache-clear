@@ -5,15 +5,13 @@
   "description": "Clear cache every time the page is reloaded.",
   "permissions": [
     "browsingData",
-    "tabs",
-    "storage"
+    "tabs"
   ],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Cache Clear on Reload",
-    "default_popup": "popup.html"
+    "default_title": "Cache Clear on Reload"
   },
   "commands": {
     "_execute_action": {
@@ -22,12 +20,6 @@
         "mac": "Command+R"
       },
       "description": "Reload and clear cache"
-    },
-    "clear_cache_and_reload_f5": {
-      "suggested_key": {
-        "default": "F5"
-      },
-      "description": "Reload and clear cache using F5"
     }
   },
   "author": "Mahe Karim",
